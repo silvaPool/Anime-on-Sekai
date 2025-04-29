@@ -172,6 +172,7 @@ body {
 .section-4  > .bloco > h2 {
     font-size: 35px;
     font-weight: 800;
+    color: black;
 }
 
 /* SECTION-5 */
@@ -199,7 +200,8 @@ body {
 /* SEARCH */
 .container {
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 30px;
 }
 
 .container > h2 {
@@ -239,7 +241,7 @@ button {
     cursor: pointer;
     border: none;
     padding: 0.9rem 2rem;
-    margin: 0;
+    margin-left: 10px;
     font-family: inherit;
     font-size: inherit;
     position: relative;
@@ -249,7 +251,7 @@ button {
     font-size: 17px;
     border-radius: 500px;
     overflow: hidden;
-    background: black;
+    background: white;
     color: ghostwhite;
 }
    
@@ -260,7 +262,7 @@ button span {
 }
    
 button:hover span {
-    color: white;
+    color: black;
 }
    
 button::before,
@@ -299,7 +301,7 @@ button:hover::before {
 }
   
 .anime {
-    background: white;
+    background: black;
     padding: 10px;
     border-radius: 8px;
     height: 320px;
@@ -309,17 +311,18 @@ button:hover::before {
     justify-content: flex-start;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     overflow: hidden;
-    color: black;
-  }
-  
-  .anime img {
+    color: white;
+    border: 1px solid white;
+}
+
+.anime img {
     width: 100%;
     height: 220px;
     object-fit: cover;
     border-radius: 4px;
-  }
+}
   
-  .anime p {
+.anime p {
     margin-top: 10px;
     font-size: 14px;
     line-height: 1.2;
@@ -328,4 +331,5 @@ button:hover::before {
     /* text-overflow: ellipsis;
     white-space: nowrap; */
     width: 100%;
-  }
+}
+
