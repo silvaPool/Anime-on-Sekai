@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FF0000;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    padding: 30px;
+}
+
+.header .nav {
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 5px;
+}
+
+.header .nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+/* MAIN */
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.section-1 > h1 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.image {
+    background: url("./images/anime.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+}
+
+.wrapper-artes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-items-telefone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-artes .texto-apre > p {
+    font-family: "Zen Dots", sans-serif;
+    width: 35vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.texto-japones {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* SECTION 2 */
+.section-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-2 .texto-primeiro {
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.section-2 .texto-segundo {
+    width: 200px;
+    font-weight: 600;
+}
+
+.bandeira {
+    background: white;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/* SECTION 3 */
+.section-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.section-3 > div {
+    background: black;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.information > div > h2 {
+    font-size: 30px;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.information > div > p {
+    font-size: 20px;
+    font-family: "Zen Dots", sans-serif;
+}
+
+.texto-japa {
+    font-size: 30px;
+}
+
+/* SECTION-4 */
+.section-4 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 40px;
+}
+
+.section-4  > .bloco {
+    background: url("./images/anime2.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    width: 70vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4  > .bloco > h2 {
+    font-size: 35px;
+    font-weight: 800;
+}
+
+/* SECTION-5 */
+.section-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+ 
+.section-5  > div {
+     background: url("./images/anime1.png");
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     border-radius: 20px;
+     width: 70vw;
+     height: 80vh;
+}
+
+.section-5  > div  > h2 {
+    font-size: 20px;
+}
+
+/* SEARCH */
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container > h2 {
+    font-size: 30px;
+    font-family: "Zen Dots", sans-serif;
+}
+  
+.input {
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1.5px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    color: black;
+}
+  
+.input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+  
+.input:active {
+    transform: scale(0.95);
+}
+  
+.input:focus {
+    border: 2px solid grey;
+}
+  
+ /* From Uiverse.io by BHARGAVPATEL1244 */ 
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 500px;
+    overflow: hidden;
+    background: black;
+    color: ghostwhite;
+}
+   
+button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+   
+button:hover span {
+    color: white;
+}
+   
+button::before,
+button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+   
+button::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+   
+button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}
+   
+  
+#resultado {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px; */
+}
+  
+.anime {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    color: black;
+  }
+  
+  .anime img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .anime p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    overflow: hidden;
+    /* text-overflow: ellipsis;
+    white-space: nowrap; */
+    width: 100%;
+  }
